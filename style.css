@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Lexend:wght@100..900&display=swap');
+
+
+
+* {
+    padding:0;
+    margin: 0;
+    font-family: "Koh Santepheap", serif;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    display:grid;
+
+}
