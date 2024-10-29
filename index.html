@@ -13,7 +13,30 @@
     </header>
     <body>
 
-        <button class="testButton">Show Library list!</button>
+        <dialog>
+            <button class="close-button" autofocus></button>
+            <form>
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" required> <span></span>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" required> <span></span>
+
+                <label for="pageNum">Page Count:</label>
+                <input type="number" id="pageNum" required> <span></span>
+
+                <!--  adding "for" attribute on label gets rid of the 
+                 hitbox on the checkbox -->
+                 <p>Is this book Read?</p>
+                <label class="switch">
+                    <input type="checkbox" id="readInput">
+                    <span class="slider round"></span>
+                </label>
+
+                <button class="submit-button">Add book</button>
+            </form>
+        </dialog>
+        <button class="new-book">Add new Book!</button>
         <div class="card-container">
 
         </div>
