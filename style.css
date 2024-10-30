@@ -1,31 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Lexend:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Lavishly+Yours&family=Lexend:wght@100..900&display=swap');
 
 
 * {
     padding:0;
     margin: 0;
-    font-family: "Koh Santepheap", serif;
+    font-family: "Lexend", serif;
 }
 
 body{
     height:100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    background: #f3c78450;
+}
+.new-book {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url(plus-circle-blue.svg);
+    border:none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
 
+.new-book:hover{
+    width: 90px;
+    height: 90px;
+    border:none;
+}
+
+.lavishly-yours-regular {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+
+header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size:2rem;
 }
 .card-container{
     flex:3;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap:30px;
 }
 
 .card {
     display:grid;
     height:300px;
-
+    padding:1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
 }
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+
 
 
 
@@ -97,7 +141,6 @@ input:checked + .slider:before {
 /* End of button css*/
 
 
-
 dialog {
     margin:auto;
     padding:2rem;
@@ -114,7 +157,7 @@ dialog {
     border:none;
     position: absolute;
     top: 2px;
-    left: 2px;
+    right: 2px;
 }
 
 
@@ -123,3 +166,15 @@ form{
     gap:0.5rem;
 }
 
+
+.koh-santepheap-bold {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+footer {
+    font-family: "Koh Santepheap", serif;
+    text-align: center;
+}

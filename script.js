@@ -99,6 +99,7 @@ function createBookDisplay(){
         let statusToggle = document.createElement("button");
         
         nameSpan.classList.add("title");
+        delButton.classList.add("close-button");
         console.log(i); 
         console.log(i.author);
         nameSpan.textContent = i.name;
@@ -109,11 +110,11 @@ function createBookDisplay(){
         delButton.addEventListener("click", (e) => {
             removeBook(i,e.target.parentNode);
         });
+        
         statusToggle.addEventListener("click",(e) => {
             toggleStatus(e.target.parentNode)
         });
         statusToggle.textContent = "Change Read Status";
-        delButton.textContent = "Remove";
         
         
         
